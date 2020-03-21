@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="e2c09a6c-6afe-4b76-ac67-a5acc383c835" name="parking.test" url="http://parking.test">
+      <webServer id="053e8eaa-d2a9-44c3-8503-c562f7045703" name="parking" url="http://parking.test">
         <fileTransfer host="parking.test" port="22" privateKey="E:\www\parking\puphpet\files\dot\ssh\id_rsa" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
