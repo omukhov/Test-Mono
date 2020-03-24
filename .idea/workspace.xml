@@ -2,25 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46d9fb53-d414-41c2-994f-720872deb96b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/auto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/auto_edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/client_edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking/select_change.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking/auto.php" beforeDir="false" afterPath="$PROJECT_DIR$/parking/auto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking/auto_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/parking/auto_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking/client.php" beforeDir="false" afterPath="$PROJECT_DIR$/parking/client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking/client_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/parking/client_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/parking/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/parking/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/parking/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parking/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/parking/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/parking/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/parking/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +122,8 @@
       <workItem from="1584346604573" duration="4792000" />
       <workItem from="1584367630117" duration="4487000" />
       <workItem from="1584437198020" duration="29872000" />
-      <workItem from="1584526354951" duration="89006000" />
+      <workItem from="1584526354951" duration="89827000" />
+      <workItem from="1584829043407" duration="65971000" />
     </task>
     <servers />
   </component>
@@ -157,10 +151,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584458786356" />
-    <state x="604" y="345" key="NewPhpFileDialog" timestamp="1584745672714">
+    <state x="604" y="345" key="NewPhpFileDialog" timestamp="1584870902569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="345" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1584745672714" />
+    <state x="604" y="345" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1584870902569" />
     <state x="279" y="58" key="SettingsEditor" timestamp="1584439716299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -177,14 +171,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="571" y="246" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824@0.0.1536.824" timestamp="1584465002675" />
-    <state x="485" y="64" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1584767776461">
+    <state x="485" y="64" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1584884919115">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="485" y="64" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1584767776461" />
-    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1584526368196">
+    <state x="485" y="64" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1584884919115" />
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1584829043809">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584526368196" />
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584829043809" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1584616084893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

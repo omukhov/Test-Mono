@@ -1,35 +1,63 @@
-<?php require "header.php"?>
+<?php ;
+require 'db.php';
+?>
 
-<div class="content">
-    <form action="client_edit.php" method="post">
-        <h3>Изменить ФИО</h3><br>
-        <input type="text" name="fullname" value="<?= isset($_GET['red_id']) ? $product['Name'] : ''; ?>"><br>
-        <h3>Изменить пол</h3><br>
-        <input type="radio" name="sex"  value="1" >Мужской
-        <input type="radio" name="sex" value="2">Женский<br>
-        <h3>Изменить телефон</h3><br>
-        <input type="tel" name="phone" value="<?= isset($_GET['red_id']) ? $product['Name'] : ''; ?>"><br>
-        <h3>Изменить адресс</h3><br>
-        <input type="text" name="adress" value="<?= isset($_GET['red_id']) ? $product['Name'] : ''; ?>"><br>
+<?php
 
-        <button type="submit">Submit</button>
-    </form>
-    <form action="auto_edit.php" method="post">
-        <div id="after">
-            <table class="table table-bordered" id="dynamic_field">
-                <tr>
-                    <td><input type="text" name="carmake"><br></td>
-                    <td><input type="text" name="model" id="model" ><br></td>
-                    <td><input type="text" name="color" id="color"><br></td>
-                    <td><input type="text" name="number" id="number"><br></td>
-                    <td><input type="radio" name="flag" value="да" id="flag">да<br>
-                        <input type="radio" name="flag" value="нет" id="flag">нет<br></td>
+$id = $_REQUEST['client'];
+$select_sql = "SELECT * FROM client WHERE id= $id";
+$result = $pdo->prepare($select_sql);
+$result->execute();
+$row = $result->fetch(PDO::FETCH_ASSOC);
+printf("<form action='client_edit.php' method='post' name='forma'>
+<fieldset>
+<input type='hidden' name='id'  value='%s'><br/>
+<label for='fullname'>ФИО</label><br/>
+<input type='text' name='fullname' size='30' value='%s'><br/>
+<label for='sex'>пол</label><br/>
+<input type='radio' name='sex' value='1'>Мужской
+<input type='radio' name='sex' value='2'>Женский<br/>
+<label for='adress'>Адрес</label><br/>
+<input type='text' name='adress' size='30' value='%s'><br/>
+<label for='phone'>телефон</label><br/>
+<input name='phone' type='text'  size='30' value='%s'>
+</fieldset>
+<br/>
+<fieldset>
+<input id='submit' type='submit' value='Редактировать запись'><br/>
+</fieldset>
+</form>",$row['id'], $row['fullname'], $row['sex'], $row['adress'], $row['phone']);
+?>
+<?php
+$sql = "SELECT * FROM auto WHERE client_id= $id";
+$result = $pdo->prepare($sql);
+$result->execute();
+$row = $result->fetch(PDO::FETCH_ASSOC);
+printf("<form action='auto_edit.php' method='post' name='form'>
+<fieldset>
+<input type='hidden' name='id'  value='%s'><br/>
+<label for='carmake'>Марка авто</label><br/>
+<input type='text' name='carmake' size='30' value='%s'><br/>
 
-                </tr>
-            </table>
+<label for='model'>Модель авто</label><br/>
+<input type='text' name='model' size='30' value='%s'><br/>
+<label for='color'>цвет авто</label><br/>
+<input name='color' type='text'  size='30' value='%s'><br/>
+<label for='number'>номер авто</label><br/>
+<input name='number' type='text'  size='30' value='%s'><br/>
 
-        </div>
-        <button type="button"  class="btn btn-succes" id="click">Add More</button>
-        <button type="button"  class="btn btn-remove id="remove">X</button>
-        <button type="submit">Submit</button>
-    </form>
+<label for='flag'>пол</label><br/>
+<input type='radio' name='flag' value='1'>Да
+<input type='radio' name='flag' value='2'>Нет<br/>
+
+</fieldset>
+<br/>
+<fieldset>
+<input id='submit' type='submit' value='Редактировать запись авто'><br/>
+</fieldset>
+</form>",$row['id'], $row['carmake'], $row['model'], $row['color'], $row['number'], $row['flag']);
+?>
+
+
+</body>
+</html>

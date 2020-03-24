@@ -70,4 +70,53 @@ html, body{
 }
 .content{
     display: flex;
+    flex-direction: column;
+
+}
+.button_save{
+    flex-basis: 120px;
+    height: 80px;
+}
+a{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+
+}
+table tr td p{
+    font-size: 14pt;
+    font-family: "Arial Black";
+}
+
+table tr td{
+    font-family: "Times New Roman";
+    font-size: 12pt;
+}
+.radio{
+    margin-left: 50px;
+    margin-right: 5px ;
+}
+.radio2{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.data{
+    display: flex;
+    margin: 10px;
+
+
+}
+.data div{
+    flex-basis: 160px;
+    font-size: 14pt;
+}
+.menu_data{
+    display: flex;
+    margin: 10px;
+}
+.menu_data div{
+    font-family: Arial;
+    font-size: 16pt;
+    flex-basis: 160px;
 }

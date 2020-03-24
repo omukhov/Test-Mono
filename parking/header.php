@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Автостоянка</title>
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="buzina-pagination.min.css" rel="stylesheet">
+    <script src="buzina-pagination.min.js"></script>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,9 +19,9 @@
             </a>
             <nav class="header_menu">
                 <ul class="header_list">
-                    <li><a href="1.php" class="header_link">Главная</a></li>
-                    <li><a href="2.php" class="header_link">Клиенты</a></li>
-                    <li><a href="4.php" class="header_link">Авто</a></li>
+                    <li><a href="index.php" class="header_link">Главная</a></li>
+                    <li><a href="create.php" class="header_link">Добавить</a></li>
+
 
                 </ul>
             </nav>

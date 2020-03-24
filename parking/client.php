@@ -23,10 +23,11 @@ if(!$_POST['submit']){
             $statement->execute([':fullname' => $fullname, ':sex' => $sex, ':adress' => $adress, ':phone' => $phone]);
 
             echo "Благодарю" . " " . $_POST['fullname'];
+            session_start();
             $id = $pdo->lastInsertId();
 
-            session_start();
-            $_SESSION['id'] = $id;
+
+            $_SESSION['id'] = $id ;
 
 
         } else {
