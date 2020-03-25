@@ -1,0 +1,2 @@
+INSERT INTO parking.client (id, fullname, sex, adress, phone) VALUES (147, 'ИИИ', 1, 'test', 11);
+INSERT INTO parking.client (id, fullname, sex, adress, phone) VALUES (148, 'ОАН', 1, 'test', 89883213);
